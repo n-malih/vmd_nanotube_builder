@@ -21,7 +21,7 @@ pbc box
 ```
 molinfo top get {a b c}
 ```
-![](https://iili.io/HPivzjn.png)
+![](https://iili.io/HPi6iqF.png)
 
 ## Contact:
 If you need help or have any quastion feel free to ask.
