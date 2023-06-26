@@ -157,7 +157,11 @@ proc ::Nanotube::graphene_core { args } {
     $sel set {x y z} $xyzlist
 
 	#Add box - edited
-	molinfo $mol set {a b c} [list [expr {$Nx_cell*$Lx_cell}] [expr {$Ny_cell*$Ly_cell}] 100.0]
+    set box_x [expr {$Nx_cell*$Lx_cell}]
+    set box_y [expr {$Ny_cell*$Ly_cell}]
+	molinfo $mol set {a b c} [list $box_x $box_y 50.0]
+    vmdcon -info "Box size:\t\t\tLx\t\t\tLy\t\t\tLz\n          \t\t\t$box_x\t\t\t$box_y\t\t\t50.0"
+    pbc box -center bb
 
     #Add representation for molecule
     if {$type=="armchair"} {mol rename $mol "Armchair $mat Sheet"}
