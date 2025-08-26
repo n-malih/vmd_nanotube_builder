@@ -1,6 +1,6 @@
 # vmd_nanotube_builder
 
-This is an edited version of VMD Nanotube Builder to have a simulation box for sheets.
+This is an edited version of VMD Nanotube Builder to have a simulation box for sheets and fix the structural problem of zigzag B-N sheets.
 
 -------------
 
