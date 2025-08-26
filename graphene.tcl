@@ -136,6 +136,10 @@ proc ::Nanotube::graphene_core { args } {
     set sel [atomselect $mol all]
     set asel [atomselect $mol {index % 2 == 0}]
     set bsel [atomselect $mol {index % 2 == 1}]
+	if {$type=="zigzag"} {
+		set asel [atomselect $mol {index % 4 == 0 || index % 4 == 3}]
+		set bsel [atomselect $mol {index % 4 == 1 || index % 4 == 2}]
+	}
     set mat Graphene
     #Set default values for all atoms
     if {$cmdline(-ma) == {C-C}} {
