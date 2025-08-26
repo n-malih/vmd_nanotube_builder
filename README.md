@@ -8,6 +8,8 @@ This is an edited version of VMD Nanotube Builder to have a simulation box for s
 
 - Solved the problem of creating the wrong structure in the B-N zigzag sheet.
 
+- Box size is now displayed in the console.
+
 -------------
 ### Usage:
 - Replace graphene.tcl with the original file in:
