@@ -4,7 +4,9 @@ This is an edited version of VMD Nanotube Builder to have a simulation box for s
 
 -------------
 
-By default, the VMD Nanotube Builder extension won't create a simulation box when generating sheets. With this edited version of Nanotube Builder, you will have a simulation box after generating the sheet.
+- By default, the VMD Nanotube Builder extension won't create a simulation box when generating sheets. With this edited version of Nanotube Builder, you will have a simulation box after generating the sheet.
+
+- Solved the problem of creating the wrong structure in the B-N zigzag sheet.
 
 -------------
 ### Usage:
